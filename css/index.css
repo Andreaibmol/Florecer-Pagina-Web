@@ -705,7 +705,6 @@ th, td{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 /*Cambio de color al pasar el ratón*/
 .btn_3:hover {
     background-color:#F4A9C6; 
@@ -1067,10 +1066,14 @@ img{
 
 .banner__block h1{
     color:var(--main-color);
+    
 }
 
 .prices h1{
     padding: 1rem 1rem;
+}
+.prices__block {
+    background-color: var(--blue-color);
 }
 
 /*ABOUT-US HTML*/
