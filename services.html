@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!--HEADER-->
+<header class="header">
+    <div class="header__block layoutBlock">
+        <div class="header__logo">
+            <a href="index.html" class="logo">Florecer</a>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </button>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="about-us.html">Sobre nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="prices.html">Suscripciones</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                    <div id="carrito">
+                        <table id="lista__carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar__carrito" class="btn_2">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--/HEADER-->    
+<main>
+
+<!--BANNER-->
+    <section class="banner banner--small banner--services">
+        <div class="banner__block layoutBlock">
+            <h1>Nuestros Servicios</h1>
+        </div>
+    </section>
+<!--/BANNER-->
+
+<!--ICONS-->
+    <section class="icons">
+        <div class="icons__block layoutBlock">
+            <a href="products.html" class="icons_box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
+                <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826M8 1a1 1 0 0 0-.998 1.03l.01.091q.017.116.054.296c.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a5 5 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1M2 9l.03-.002.091-.01a5 5 0 0 0 .296-.054c.241-.049.542-.122.887-.213a61 61 0 0 0 2.314-.676L5.762 8l-.144-.045a61 61 0 0 0-2.314-.676 17 17 0 0 0-.887-.213 5 5 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2m7 5-.002-.03a5 5 0 0 0-.064-.386 16 16 0 0 0-.213-.888 61 61 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a5 5 0 0 0-.064.386L7 14a1 1 0 1 0 2 0m-5.696-2.134.025-.017a5 5 0 0 0 .303-.248c.184-.164.408-.377.661-.629A61 61 0 0 0 5.96 9.23l.103-.111-.147.033a61 61 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5 5 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027q.014-.03.036-.084a5 5 0 0 0 .102-.283c.078-.233.165-.53.258-.874a61 61 0 0 0 .572-2.343l.033-.147-.11.102a61 61 0 0 0-1.743 1.667 17 17 0 0 0-.629.66 5 5 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366m9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a5 5 0 0 0-.303.248 17 17 0 0 0-.661.629A61 61 0 0 0 10.04 6.77l-.102.111.147-.033a61 61 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a5 5 0 0 0 .367-.138zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027q-.014.03-.036.084a5 5 0 0 0-.102.283c-.078.233-.165.53-.258.875a61 61 0 0 0-.572 2.342l-.033.147.11-.102a61 61 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5 5 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366M14 9a1 1 0 0 0 0-2l-.03.002a5 5 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a5 5 0 0 0 .386.064zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035q.108.045.283.103c.233.078.53.165.874.258a61 61 0 0 0 2.343.572l.147.033-.103-.111a61 61 0 0 0-1.666-1.742 17 17 0 0 0-.66-.629 5 5 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366m2.196-1.196.017.025a5 5 0 0 0 .248.303c.164.184.377.408.629.661A61 61 0 0 0 6.77 5.96l.111.102-.033-.147a61 61 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5 5 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1m9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a61 61 0 0 0-2.342-.572l-.147-.033.102.111a61 61 0 0 0 1.667 1.742c.253.252.477.465.66.629a5 5 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366m-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5 5 0 0 0-.248-.303 17 17 0 0 0-.629-.661A61 61 0 0 0 9.23 10.04l-.111-.102.033.147a61 61 0 0 0 .572 2.342c.093.345.18.642.258.875a5 5 0 0 0 .138.367zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                </svg>
+                <h3>Diseño personalizado</h3>
+            </a>
+        <div class="icons_box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+            <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+            <h3>Ofertas y suscripciones</h3>
+        </div>
+        <div class="icons_box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+            </svg>
+            <h3>Entrega puntual</h3>
+        </div>
+        <div class="icons_box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+              </svg>
+            <h3>Asesoramiento experto</h3>
+        </div>
+        </div>
+    </section>
+<!--/ICONS-->
+
+<!--SERVICES-->
+    <section class="services">
+        <div class="services__block layoutBlock">
+            <h3>¿Quieres descubrir nuestros servicios? ¡Adelante!</h3>
+        <div class="services__cards">
+            <!--Card 1-->
+            <div class="services__card">
+                <img src="media/servicios_uno.jpg" alt="Eventos Corporativos">
+                <div class="services__card__content">
+                    <h3>Eventos corporativos</h3>
+                    <a href="#">¿Es el aniversario de tu empresa?</a>
+                    <a href="#">Click para conocer más</a>
+                </div>
+            </div>
+            <!--Card 2-->
+            <div class="services__card">
+                <img src="media/servicio_tres.jpg" alt="Boda">
+                <div class="services__card__content">
+                    <h3>Bodas</h3>
+                    <a href="#">¿Listos para el gran día de vuestra vida?</a>
+                    <a href="#">Click para conocer más</a>
+                </div>
+            </div>
+            <!--Card 3-->
+            <div class="services__card">
+                <img src="media/servicios_dos.jpg" alt="Cumpleaños">
+                <div class="services__card__content">
+                    <h3>Cumpleaños</h3>
+                    <a href="#">¿Quieres sorprender a tus invitados?</a>
+                    <a href="#">Click para conocer más</a>
+                </div>
+            </div>
+        </div>
+        <a class="link__services" href="contact.html">Descubre más servicios
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_86)">
+            <path d="M8.33334 5L7.15834 6.175L10.975 10L7.15834 13.825L8.33334 15L13.3333 10L8.33334 5Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_86">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+        </a>
+        </div>
+    </section>
+
+<!--/SERVICES-->
+
+<!--PARAGRAPH-->
+    <section class="paragraph">
+        <div class="paragraph__block layoutBlock">
+            <div class="paragraph__content">
+                <h3>¡Transformamos y hacemos florecer cada evento con el arte floral perfecto!🌷</h3>
+                <p>"En nuestra floristería, hacemos que cada ocasión sea inolvidable con arreglos florales diseñados a medida para eventos corporativos, cumpleaños y bodas. Desde elegantes centros de mesa hasta decoraciones que capturan la esencia de tu celebración, nuestro equipo se encarga de cada detalle. Ofrecemos diseños exclusivos, entrega puntual y asesoramiento personalizado para que tus eventos brillen con el toque natural y sofisticado que solo nuestras flores pueden ofrecer. ¡Haz que tus momentos especiales florezcan con nosotros! "</p>
+            </div>
+        </div>
+    </section>
+<!--/PARAGRAPH-->
+
+<!--TEXT BLOCK-->
+    <section class="textblock">
+        <div class="textblock__block layoutBlock">
+            <div class="textblock__image">
+                <img src="media/event.png" alt="About us">
+            </div>
+            <div class="textblock__content">
+                <span>Empresas</span>
+                <h2>Florecer en empresas</h2>
+                <p>En nuestra floristería, elevamos tus eventos corporativos con arreglos florales que reflejan profesionalismo y estilo. Diseñamos decoraciones personalizadas que se adaptan a la identidad de tu empresa, creando ambientes acogedores y sofisticados. Garantizamos flores frescas, entregas puntuales y un servicio impecable que impresionará a tus clientes y colaboradores. Elige nuestro servicio para añadir un toque de elegancia natural a tus reuniones, presentaciones y celebraciones empresariales. ¡Haz que tu marca florezca con nosotros! 🌿</p>
+                <a class="btn" href="products.html">¡Ver productos!</a>
+            </div>
+        </div>
+    </section>
+    <!--/TEXT BLOCK-->
+
+    <!--TEXT BLOCK-->
+    <section class="textblock">
+        <div class="textblock__block layoutBlock">
+            <div class="textblock__image">
+                <img src="media/boda.jpg" alt="About us">
+            </div>
+        <div class="textblock__content">
+            <span>Bodas</span>
+            <h2>Florecer en tu boda</h2>
+            <p>En nuestra floristería, hacemos que tu boda sea tan única como tu historia de amor. Creamos arreglos florales personalizados que realzan cada detalle de tu gran día, desde el ramo de novia hasta la decoración del lugar. Trabajamos con flores frescas y diseños exclusivos, adaptados a tu estilo y visión. Con asesoramiento experto y entrega puntual, garantizamos que todo sea perfecto. Elige nuestro servicio para llenar de belleza y romanticismo uno de los días más importantes de tu vida.🌸</p>
+            <a class="btn" href="products.html">¡Ver productos!</a>
+        </div>
+        </div>
+    </section>
+    <!--/TEXT BLOCK-->
+
+    <!--TEXT BLOCK-->
+    <section class="textblock">
+        <div class="textblock__block layoutBlock">
+            <div class="textblock__image">
+                <img src="media/cumpleaños.jpg" alt="About us">
+            </div>
+        <div class="textblock__content">
+            <span>Cumpleaños</span>
+            <h2>Florecer cada año</h2>
+            <p>Celebra cada cumpleaños con la magia de las flores gracias a nuestros servicios personalizados. Diseñamos decoraciones únicas que llenan de color y alegría cualquier espacio, adaptándonos al estilo y temática de tu evento. Desde centros de mesa vibrantes hasta arreglos especiales para el cumpleañero/a, cuidamos cada detalle. Ofrecemos flores frescas, entrega puntual y un toque especial que hará que tu celebración sea inolvidable. ¡Haz que cada cumpleaños florezca con nosotros! 🎉</p>
+            <a class="btn" href="products.html">¡Ver productos!</a>
+        </div>
+        </div>
+    </section>
+    <!--/TEXT BLOCK-->
+
+ <!--PRICES-->
+ <section class="prices">
+    <h1> > Nuestras suscripciones</h1>
+    <div class="prices__block layoutBlock">
+        <div class="prices__card">
+            <div class="prices__title">
+                <h3>Suscripción Corporativa "Florece tu Marca"</h3>
+                <span>Nueva oferta</span>
+            </div>
+            <span class="prices__price">55,99€</span>
+            <a href="#" class="btn">¡Vamos a florecer!</a>
+
+            <ul class="prices__list">
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Arreglos florales para oficinas y eventos empresariales</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Cambio semanal de flores para mantener espacios frescos</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Diseño acorde a la identidad visual de tu marca</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Entrega directa y montaje en el lugar</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>Disponibilidad de flores sujeta a temporada</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>Limitado a un evento por mes</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>No incluye decoraciones personalizadas para grandes eventos</b>
+                </li>
+            </ul>
+        </div>
+        <div class="prices__card">
+            <div class="prices__title">
+                <h3>Suscripción Bodas "Sueño Floral"</h3>
+                <span>Nueva oferta</span>
+            </div>
+            <span class="prices__price">230,00€</span>
+            <a href="#" class="btn">¡Vamos a florecer!</a>
+
+            <ul class="prices__list">
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Decoración completa para bodas íntimas o sesiones de compromiso</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Asesoramiento personalizado con un diseñador floral</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Arreglos exclusivos con flores de temporada</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Incluye ramo de novia y boutonniere para el novio</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>Diseños exlusivos para bodas pequeñas [máx. 80 invitados]</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>Reservas con mínimo 2 meses de anticipación</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>Costo adicional para inclurir transporte fuera de la ciudad</b>
+                </li>
+            </ul>
+        </div>
+        <div class="prices__card">
+            <div class="prices__title">
+                <h3>Suscripción Cumpleaños "Cumplir años es florecer"</h3>
+                <span>Nueva oferta</span>
+            </div>
+            <span class="prices__price">44,99€€</span>
+            <a href="#" class="btn">¡Vamos a florecer!</a>
+
+            <ul class="prices__list">
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Decoración floral básica para una celebración al mes</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Centros de mesa coloridos y adaptados al tema</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Incluye un ramo de regalo para el cumpleañero/a</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.584 0.5 0 4.084 0 8.5C0 12.916 3.584 16.5 8 16.5C12.416 16.5 16 12.916 16 8.5C16 4.084 12.416 0.5 8 0.5ZM8 14.9C4.472 14.9 1.6 12.028 1.6 8.5C1.6 4.972 4.472 2.1 8 2.1C11.528 2.1 14.4 4.972 14.4 8.5C14.4 12.028 11.528 14.9 8 14.9ZM11.672 4.964L6.4 10.236L4.328 8.172L3.2 9.3L6.4 12.5L12.8 6.1L11.672 4.964Z" fill="#41A930"/>
+                    </svg>
+                    <b>Entrega y recogida rápida de manteriales decorativos</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>Nos incluye flores premium o exóticas</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>Servicio limitado a celebraciones de hasta 40 personas</b>
+                </li>
+                <li>
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0.5C3.5912 0.5 0 4.0912 0 8.5C0 12.9088 3.5912 16.5 8 16.5C12.4088 16.5 16 12.9088 16 8.5C16 4.0912 12.4088 0.5 8 0.5ZM8 2.1C11.5441 2.1 14.4 4.9559 14.4 8.5C14.4 12.0441 11.5441 14.9 8 14.9C4.4559 14.9 1.6 12.0441 1.6 8.5C1.6 4.9559 4.4559 2.1 8 2.1ZM5.36562 4.73438L4.23438 5.86562L6.86875 8.5L4.23438 11.1344L5.36562 12.2656L8 9.63125L10.6344 12.2656L11.7656 11.1344L9.13125 8.5L11.7656 5.86562L10.6344 4.73438L8 7.36875L5.36562 4.73438Z" fill="#B8AFAF"/>
+                    </svg>
+                    <b>No se realizan cambios de último minuto</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--/PRICES-->
+
+<!--CONTACT-->
+<section class="contact">
+    <h3>¿Quiéres recibir más información?</h3>
+    <div class="contact__container">
+        <form class="contact__form">
+            <input type="email" class="contact__input" placeholder="Correo electrónico">
+            <input type="submit" class="btn_3" value="Enviar">
+        </form>
+    </div>
+</section>
+<!--/CONTACT-->
+</main>
+
+<!--FOOTER-->
+<footer class="footer">
+<div class="footer__block layoutBlock">
+    <div class="footer__icons">
+        <a href="#" class="logo">Florecer</a>
+        <ul class="footer_social">
+            <li class="footer_social_instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+            </li>
+            <li class="footer_social_facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+            </li>
+            <li class="footer_social_whatsapp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__information">
+        <h3>"Si amas algo lo suficiente, hablará contigo" George Washington Carver</h3>
+    </div>
+    <div class="footer__legal">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Política de cookies</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Configuración de cookies</a>
+    </div>
+</div>
+</footer>
+<!--/FOOTER-->
+
+</body>
+</html>
